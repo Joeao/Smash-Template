@@ -12,7 +12,9 @@ A logo in .png format
 Compatibility
 -------------
 Mobile Devices
+
 Internet Explorer 8+
+
 Any modern browser
 
 Background

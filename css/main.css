@@ -1,14 +1,17 @@
 body {
 	background: #eee;
 	margin-top:20px;
+	font-family: 'Open Sans', sans-serif;
 }
 
+#header {
+	margin-bottom:20px;
+}
 .row {
 	margin: 0 5%;
 }
 
 #logo-box {
-	text-align: center;
 }
 
 	#logo-box img {
@@ -36,6 +39,7 @@ body {
 	#nav-bar ul {
 		display: flex;
 		justify-content:space-between;
+		padding:0;
 	}
 
 		#nav-bar ul li {
@@ -47,6 +51,7 @@ body {
 			display: flex;
 			flex-direction:column;
 			justify-content:center;
+			border-radius:0;
 		}
 
 			#nav-bar ul li i {
@@ -57,3 +62,24 @@ body {
 				font-size:24px;
 				margin:10px 0;
 			}
+
+#social-media {
+	padding: 0;
+	display: flex;
+	justify-content:space-between;
+}
+
+	#social-media li {
+		list-style-type: none;
+		background: #ddd;
+		width:50px;
+		height:50px;
+		text-align: center;
+		display: inline-block;
+	}
+
+		#social-media li i {
+			color: #272727;
+			font-size:32px;
+			line-height: 50px;
+		}

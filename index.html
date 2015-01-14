@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Smash Bros</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
 
     <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
@@ -11,31 +14,70 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
 </head>
 <body>
-    <div class="row">
-        <div class="col-md-4" id="logo-box">
+    <div class="row" id="header">
+        <div class="col-md-3" id="logo-box">
             <img id="logo" src="./img/logo.png" alt="Regional Logo" />
             <p>Smash Denmark</p>
         </div>
-        <div class="col-md-8" id="nav-bar">
+        <div class="col-md-8 col-md-offset-1" id="nav-bar">
             <ul>
-                <li>   
+                <li class="btn btn-default">   
                     <i class="fa fa-calendar-o"></i>
                     <p>Events</p>
                 </li>
 
-                <li>   
+                <li class="btn btn-default">   
                     <i class="fa fa-map-marker"></i>
                     <p>Player Finder</p>
                 </li>
 
-                <li>   
+                <li class="btn btn-default">   
                     <i class="fa fa-trophy"></i>
                     <p>Power Ranking</p>
                 </li>
 
-                <li>   
+                <li class="btn btn-default">   
                     <i class="fa fa-comment-o"></i>
                     <p>Forum</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Welcome to Smash Denmark</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis, eros ut laoreet dictum, lacus sem vehicula nisl, at iaculis tortor justo non tortor. Suspendisse tristique mollis enim, eget ornare urna ultricies sed. Ut mattis nunc at enim dapibus mattis. Quisque vel suscipit tellus. Nullam nisl massa, cursus et leo ut, euismod elementum massa. In ornare erat non pulvinar tempus. Donec risus sem, malesuada id placerat ut, consectetur vel ante. Proin mollis orci ac dignissim ultrices. Integer suscipit arcu eu eros facilisis euismod eget sed ligula. Pellentesque quis nunc arcu. Aenean at est vel est scelerisque accumsan nec nec justo. Etiam varius nunc ut nisi hendrerit egestas. Maecenas vitae dolor eget leo viverra dictum eu quis dui. In laoreet mollis neque, vitae blandit tortor suscipit nec.
+            </p>
+
+            <p>
+                Curabitur at euismod lacus. Aenean commodo nunc et malesuada tristique. Pellentesque euismod, enim a suscipit pulvinar, erat leo convallis augue, eget varius risus turpis quis magna. Etiam quam ante, pulvinar vel eros tristique, placerat tempor ligula. Sed eget risus vel nisi porttitor finibus. Nam consectetur porta diam pharetra vestibulum. Nullam et fringilla purus. Nullam lacinia viverra sagittis. Curabitur ante massa, porta eu faucibus eu, varius ullamcorper dolor.
+            </p>
+            <p>
+                In porttitor mi at massa sodales, sit amet tempus lectus aliquam. Maecenas vitae leo est. Ut nec ultrices neque. Nulla vestibulum mi eget nulla dictum, a consectetur ligula ultrices. Donec sit amet iaculis urna. Cras ante ipsum, rhoncus sit amet aliquet sit amet, bibendum vitae nisl. Donec augue ligula, tempor et metus vel, commodo auctor mauris. Suspendisse potenti. Duis metus libero, finibus non sagittis eu, pellentesque nec magna. Aenean hendrerit ullamcorper nisl, nec aliquet nisi euismod ut. Aliquam pretium id metus in ultricies. Fusce sodales eu mauris vel lobortis. Praesent neque felis, laoreet et vulputate et, scelerisque euismod purus. Duis urna nibh, eleifend non justo eu, euismod bibendum est. Suspendisse quis quam condimentum, luctus ex a, ullamcorper nulla. Etiam auctor diam non fringilla elementum.
+            </p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-2">
+            <h4>Social Media</h4>
+            <ul id="social-media">
+                <li>
+                    <a href="https://www.facebook.com/groups/1397200900559117/" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/channel/UC1ioF74jKGXarsLo05ZnyHw" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="http://www.twitch.tv/mrkingfunk" target="_blank">
+                        <i class="fa fa-twitch"></i>
+                    </a>
                 </li>
             </ul>
         </div>
