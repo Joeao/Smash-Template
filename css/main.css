@@ -1,7 +1,21 @@
+html {
+    height:100%;
+}
+
 body {
 	background: #eee;
-	margin-top:20px;
 	font-family: 'Open Sans', sans-serif;
+	height:100%;
+}
+
+/*
+* Keeps footer down, adds space (padding) at top and bottom of main body
+**/
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -100px;
+    padding: 20px 0 120px;
 }
 
 #header {
@@ -65,8 +79,6 @@ body {
 
 #social-media {
 	padding: 0;
-	display: flex;
-	justify-content:space-between;
 }
 
 	#social-media li {
@@ -76,10 +88,36 @@ body {
 		height:50px;
 		text-align: center;
 		display: inline-block;
+		margin:0 10px;
 	}
+
+		#social-media a:first-of-type li {
+			margin-left:0;
+		}
+
+		#social-media a:last-of-type li {
+			margin-right:0;
+		}
 
 		#social-media li i {
 			color: #272727;
 			font-size:32px;
 			line-height: 50px;
 		}
+
+footer {
+	background: #272727;
+	color:#ddd;
+	width:100%;
+	text-align: center;
+	height:100px;
+	width:100%;
+    font-weight: 300;
+    line-height: 25px;
+    padding:25px 0;
+    border-top:5px solid #111;
+}
+
+	footer p {
+		margin:0;
+	}
