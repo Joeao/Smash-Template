@@ -21,6 +21,7 @@ body {
 #header {
 	margin-bottom:20px;
 }
+
 .row {
 	margin: 0 5%;
 }
@@ -62,11 +63,27 @@ body {
 			text-align: center;
 			width:180px;
 			height:180px;
-			display: flex;
-			flex-direction:column;
-			justify-content:center;
 			border-radius:0;
+			padding:0;
 		}
+
+			#nav-bar ul li a {
+				color:inherit;
+				height:100%;
+				width:100%;
+				-webkit-transition: all 0.2s ease-in-out;
+				-moz-transition: all 0.2s ease-in-out;
+				-ms-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+				display: flex;
+				flex-direction:column;
+				justify-content:center;
+			}
+
+				#nav-bar ul li a:hover {
+					text-decoration: none;
+					background: rgba(0,0,0,0.05);
+				}
 
 			#nav-bar ul li i {
 				font-size:64px;
