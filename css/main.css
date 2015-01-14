@@ -27,12 +27,13 @@ body {
 }
 
 #logo-box {
+	text-align: center;
 }
 
 	#logo-box img {
 		max-width:300px;
 		height:auto;
-		max-height:200px;
+		max-height:170px;
 	}
 
 		#logo-box p {

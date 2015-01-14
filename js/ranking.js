@@ -1,8 +1,4 @@
 $(document).ready(function() {
-	/*$.get('/assets/header.html', function(data) {
-		$('#wrap').append(data);
-	})*/
-
 	var splitRankings = function(RankArray) {
 		var rankList = document.getElementByID('rank-list');
 
