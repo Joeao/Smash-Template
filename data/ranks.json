@@ -3,9 +3,19 @@
 		{
 			"name": "Julius Vissing",
 			"tag": "King Funk",
-			"rank": 3,
-			"bio": "Been playing for ages",
-			"city": "Copenhagen"
+			"bio": "Fluent in every language. Pro at every game.",
+			"city": "Copenhagen",
+			"imgFileName": "kingfunk.png",
+			"smash64Rank": 1,
+			"smash64tier": "ss",
+			"meleeRank": 3,
+			"meleeTier": "aplus",
+			"pmRank": 5,
+			"pmTier": "aminus",
+			"brawlRank": 1,
+			"brawlTier": "s",
+			"smash4Rank": 6,
+			"smash4Tier": "aminus"
 		}
 	]
 }

@@ -1,25 +1,43 @@
 $(document).ready(function() {
 	var splitRankings = function(RankArray) {
-		var rankList = document.getElementByID('rank-list');
+		var rankList = document.getElementById('rank-list');
 
 		for(var i=0;i<RankArray.length;i++) {
 			var thumbnail = document.createElement('div'),
 				img = document.createElement('img'),
 				caption = document.createElement('div'),
-				header = document.createElement('h3'),
-				bio = document.createElement('p');
+				tag = document.createElement('h3'),
+				name = document.createElement('h4'),
+				bio = document.createElement('p'),
+				meleeRank = document.createElement('span'),
+				meleeTier = document.createElement('span');
 
-			thumbnail.className = 'thumbnail';
-			img.src = RankArray[i].img;
+			thumbnail.className = 'thumbnail ' + RankArray[i].meleeTier;
+			img.src = '../img/players/' + RankArray[i].imgFileName;
+			img.className = 'img-circle';
 			caption.className = 'caption';
-			header.innerHTML = RankArray[i].tag + '<em>' + RankArray.name + '</em>';
+			meleeRank.className = 'rank';
+
+			tag.innerHTML = RankArray[i].tag;			
+			
 			bio.innerHTML = RankArray[i].bio;
 
-			caption.appendChild(header);
+			meleeRank.innerHTML = RankArray[i].meleeRank;
+
+			meleeTier.innerHTML = RankArray[i].meleeTier;
+
+			caption.appendChild(tag);
+
+			if(RankArray[i].name) {
+				name.innerHTML = '<em>' + RankArray[i].name + '</em>';
+				caption.appendChild(name);
+			}
+
 			caption.appendChild(bio);
 
 			thumbnail.appendChild(img);
 			thumbnail.appendChild(caption);
+			thumbnail.appendChild(meleeRank);
 
 			rankList.appendChild(thumbnail);
 		}
