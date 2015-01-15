@@ -127,47 +127,23 @@ body {
 	width:25%;
 	text-align: center;
 	position: relative;
+	display: inline-block;
+	margin: 20px 4%;
+	padding:0;
+	border:2px solid #272727;
+	border-radius:0;
 }
 
-	.thumbnail.ss {
-		background: #ff7f7f;
-	}
-
-	.thumbnail.s {
-		background: #ffbf7f;
-	}
-
-	.thumbnail.aplus {
-		background: #ffdf7f;
-	}
-
-	.thumbnail.aminus {
-		background: #ffff7f;
-	}
-
-	.thumbnail.b {
-		background: #bfff7f;
-	}
-
-	.thumbnail.cplus {
-		background: #7fff7f;
-	}
-
-	.thumbnail.cminus {
-		background: #7fbfff;
-	}
-
-	.thumbnail.d {
-		background: #7f7fff;
-	}
-
-	.thumbnail.e {
-		background: #ff7fff;
-	}
-
-	.thumbnail.f {
-		background: #bf7fbf;
-	}
+	.thumbnail.ss { background: #ff7f7f; }
+	.thumbnail.s { background: #ffbf7f; }
+	.thumbnail.aplus { background: #ffdf7f; }
+	.thumbnail.aminus { background: #ffff7f; }
+	.thumbnail.b { background: #bfff7f; }
+	.thumbnail.cplus { background: #7fff7f; }
+	.thumbnail.cminus { background: #7fbfff; }
+	.thumbnail.d { background: #7f7fff; }
+	.thumbnail.e { background: #ff7fff; }
+	.thumbnail.f { background: #bf7fbf; }
 
 	.thumbnail img {
 		max-height: 200px;
@@ -192,6 +168,20 @@ body {
 
 		.thumbnail .rank:before {
 			content:'#';
+		}
+
+	.thumbnail .tier {
+		position: absolute;
+		top:5px;
+		left:10px;
+		font-size:22px;
+		color: #272727;
+		font-weight: 600;
+	}
+
+		.thumbnail .tier:before {
+			content:'Tier:';
+			display: block;
 		}
 
 footer {

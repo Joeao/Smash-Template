@@ -1,0 +1,36 @@
+{
+	"players": [
+		{
+			"name": "Julius Vissing",
+			"tag": "King Funk",
+			"bio": "Fluent in every language. Pro at every game.",
+			"city": "Copenhagen",
+			"imgFileName": "kingfunk.png",
+			"smash64": {
+				"rank": 1,
+				"tier": "ss",
+				"main": "Pikachu"
+			},
+			"melee": {
+				"rank": 1,
+				"tier": "s",
+				"main": "Falco"
+			},
+			"pm": {
+				"rank": 5,
+				"tier": "aminus",
+				"main": "Metaknight"
+			},
+			"brawl": {
+				"rank": 1,
+				"tier": "s",
+				"main": "Falco"
+			},
+			"smash4": {
+				"rank": 6,
+				"tier": "aminus",
+				"main": "Diddy Kong"
+			}
+		}
+	]
+}
