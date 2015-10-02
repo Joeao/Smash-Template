@@ -2,7 +2,7 @@
 var tierList=[{tier:"ss",visual:"SS"},{tier:"s",visual:"S"},{tier:"aplus",visual:"A+"},{tier:"aminus",visual:"A-"},{tier:"b",visual:"B"},{tier:"cplus",visual:"C+"},{tier:"c",visual:"C"},{tier:"cminus",visual:"C-"},{tier:"d",visual:"D"},{tier:"e",visual:"E"},{tier:"f",visual:"F"}]
 
 var splitRankings = function(RankArray, game) {
-	var rankList = document.getElementById('rank-list');
+	var playerList = document.getElementById('player-list');
 
 	for(var i=0;i<RankArray.length;i++) {
 		if(RankArray[i][game]) {
@@ -45,34 +45,36 @@ var splitRankings = function(RankArray, game) {
 			rank.innerHTML = RankArray[i][game].rank;
 			tier.innerHTML = visual;
 
+			// Append children to caption
 			caption.appendChild(tag);
-
 			if(RankArray[i].name) {
 				name.innerHTML = '<em>' + RankArray[i].name + '</em>';
 				caption.appendChild(name);
 			}
-
 			caption.appendChild(main);
-
 			caption.appendChild(bio);
 
+			// Append children to thumbnail
 			thumbnail.appendChild(img);
 			thumbnail.appendChild(caption);
 			thumbnail.appendChild(rank);
 			thumbnail.appendChild(tier);
 
-			rankList.appendChild(thumbnail);
+			// Append thumbnail to list of players
+			playerList.appendChild(thumbnail);
 		}
 	}
 }
 
-/*
-* Events
+/**
+ * Events
 **/
 var gameList = document.getElementById('game-list').children;
 
 for(var i=0; i<gameList.length;i++) {
 	gameList[i].onclick = function() {
+		document.getElementById('player-list').innerHTML = "";
+
 		var game = this.getAttribute('data-game'),
 			request = new XMLHttpRequest();
 

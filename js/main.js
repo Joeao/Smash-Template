@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-request.open('GET', '../data/properties.json', true);
+request.open('GET', '/Smash-Template/data/properties.json', true);
 
 request.onreadystatechange = function() {
 	if (this.readyState === 4) {
